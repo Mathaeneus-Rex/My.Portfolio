@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   color: var(--gin);
   background-color: var(--outer-space);
+  margin: -1rem auto;
   
 }
 
