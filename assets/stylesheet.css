@@ -119,7 +119,7 @@ nav h1{
 .backgroundbox {
   position:relative;
   margin-bottom: 0%;
-  margin-top: 0%;
+  margin-top: 0;
   
 }
 
@@ -131,14 +131,14 @@ nav h1{
   background-size:cover;
   width:100%;
   height: 100%;
-  
+  margin-top: 0;  
 }
 
 .imgborder{
   background-color: var(--header-bkgrnd-color);
   height: 2rem;
   margin-bottom: 0%;
-  margin-top: -5%;
+  margin-top: -3%;
 }
 
 main {
@@ -223,6 +223,10 @@ footer {
     align-items: center;
   }
   
+  .card-body {
+    text-align: center;
+    padding:5px;
+  }
 
 .code-card pre:active {
     user-select: all;
@@ -230,9 +234,7 @@ footer {
 
 
  @media screen and (min-width: 768px) {
-.backgroundimage{
-  margin-top: 80px;
-}   
+
 
 .card-column {
       flex: 0 0 50%;
@@ -244,11 +246,13 @@ footer {
       flex-grow: 1;
     }
   }
-
-@media screen and (min-width: 992px) {
-.backgroundimage{
-  margin-top: 5%;
+@media screen and (max-width: 768px) {
+  .backgroundimage{
+  margin-top: 80px;
+  }
 }
+@media screen and (min-width: 992px) {
+
 
  header {
       width: 75%;
