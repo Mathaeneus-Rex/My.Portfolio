@@ -5,7 +5,7 @@
 --outer-space:rgb(66, 187, 187);
 --gin: #e0eae4;
 /* text color and box effects color*/
---textcolor: #1a093f;
+--textcolor: #0b0120;
 
 }
 
@@ -99,17 +99,7 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:hover {
-    background-color: var(--outer-space);
-    color: var(--blue-text);
-    border: 2px solid var(--orange-text);
-    border-radius: 5%;
-}
 
-nav a:active {
-    color: var(--orange-text);
-    border: 2px solid var(--blue-text);
-}
 nav h1{
     justify-content: left;
     align-items: column;
@@ -146,13 +136,45 @@ main {
     margin: 2rem auto;
   }
 
-
-
-
-footer {
+footer {  
     margin: 1.5rem;
     text-align: center;
   }
+footer ul { 
+  margin: 0;
+  padding:0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;  
+  
+}
+
+ a{
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+ a:hover{
+  color: 000;
+}
+ a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+ a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 
 .row {
     display: flex;

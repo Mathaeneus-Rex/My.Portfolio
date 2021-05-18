@@ -5,4 +5,6 @@ This page is a work in progress. I will continue it's developement and update it
 I have 6 box's sitting in a screen, they're flexed, they're fonted, the colors are gentle and easy on the eyes in my opinion.
 I will continue to explore idea's with this page as I work through the boot.camp!
 
+![](assets/images/screenshot.jpg)
+
 Never.Stop.Coding.
